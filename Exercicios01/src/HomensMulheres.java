@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class HomensMulheres {
     public static void main(String[] args) {
+        try{
     int sexo, qtMulheres=0, qtHomens=0;
     double altura, somaH=0, mediaHomens=0, maior=0, menor=0;
 
@@ -37,6 +38,10 @@ public class HomensMulheres {
 
     entrada.close();
 }
+    catch(java.util.InputMismatchException e){
+        System.out.println("O programa espera um valor decimal no formato americano, exemplo 1.74. Por favor reniciar a aplicação");
+}
+    }
 }
     
 
